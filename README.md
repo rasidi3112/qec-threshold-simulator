@@ -23,35 +23,25 @@ For the surface code with depolarizing noise:
 
 ## Output
 
-### Example Run
-```text
-[1/4] Configuring simulation parameters...
-    • Code distances: [3, 5, 7, 9, 11]
-    • Error rate range: 0.20% to 2.20%
-    • Monte Carlo trials per point: 1000
-    • Total simulations: 75,000
-
-[2/4] Initializing threshold estimator...
-[3/4] Running Monte Carlo threshold estimation...
-[4/4] Generating visualizations...
-
-    ╔══════════════════════════════════════════════════════════════════════════════════╗
-    ║                          SIMULATION COMPLETE                                     ║
-    ║   Estimated threshold: p_th = 1.00%                                        ║
-    ║   Computation time: 4.5s                                                   ║
-    ╚══════════════════════════════════════════════════════════════════════════════════╝
-```
+**Simulation Results (Distance 3-11, 1000 trials):**
+- **Estimated Threshold:** $p_{th} \approx 1.00\%$
+- **Confidence Interval:** $0.99\% - 1.01\%$
+- **Computation Time:** ~4.5s
 
 ### Threshold Plot
+Error rates for different code distances. The crossing point indicates the threshold.
 ![Threshold Plot](docs/images/threshold_plot.png)
 
 ### Surface Code Lattice
+Visualization of the d=11 lattice with Qubit/Stabilizer layout.
 ![Lattice Visualization](docs/images/lattice_visualization.png)
 
 ### Scaling Analysis
+Logical error rate suppression below threshold (exponential decay).
 ![Scaling Analysis](docs/images/scaling_analysis.png)
 
 ### Finite-Size Scaling Collapse
+Universal scaling behavior near the phase transition.
 ![Scaling Collapse](docs/images/scaling_collapse.png)
 
 ## Installation
