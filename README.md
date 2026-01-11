@@ -23,6 +23,25 @@ For the surface code with depolarizing noise:
 
 ## Output
 
+### Example Run
+```text
+[1/4] Configuring simulation parameters...
+    • Code distances: [3, 5, 7, 9, 11]
+    • Error rate range: 0.20% to 2.20%
+    • Monte Carlo trials per point: 1000
+    • Total simulations: 75,000
+
+[2/4] Initializing threshold estimator...
+[3/4] Running Monte Carlo threshold estimation...
+[4/4] Generating visualizations...
+
+    ╔══════════════════════════════════════════════════════════════════════════════════╗
+    ║                          SIMULATION COMPLETE                                     ║
+    ║   Estimated threshold: p_th = 1.00%                                        ║
+    ║   Computation time: 4.5s                                                   ║
+    ╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
 ### Threshold Plot
 ![Threshold Plot](docs/images/threshold_plot.png)
 
