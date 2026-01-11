@@ -26,8 +26,8 @@ def print_banner():
 
 def main():
     parser = argparse.ArgumentParser(description='Quantum Error Correction Threshold Simulator')
-    parser.add_argument('--distances', type=int, nargs='+', default=[3, 5, 7])
-    parser.add_argument('--trials', type=int, default=500)
+    parser.add_argument('--distances', type=int, nargs='+', default=[3, 5, 7, 9, 11])
+    parser.add_argument('--trials', type=int, default=1000)
     parser.add_argument('--output', type=str, default='outputs')
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verbose', action='store_true')
